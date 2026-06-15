@@ -1,3 +1,44 @@
+#繁體中文化改的部份
+assets/dialogue_cn.txt 機器轉成繁體中文並補上缺少的字
+assets/text_compression.py 補上缺少的字並轉成繁體中文
+tools/generate_font_cn.py 補上缺少的字並轉成繁體中文
+tables/ark-pixel-12px-zh_cn.otf 改成繁體新版
+
+## 編譯的方式
+
+### 前置
+
+- 美版 ROM 文件 `zelda3.sfc`（SHA256: `66871d66be19ad2c34c927d6b14cd8eb6fc3181965b6e517cb361f7316009cfb`）
+- Python 3 + Pillow Lib：`pip install pillow`
+- SDL2：`apt install sdl2`（Linux）
+
+### Linux 編譯
+
+```bash
+# 1. 將 ROM 放到項目根目錄
+cp your_rom.sfc zelda3.sfc
+
+# 2. 生成中文字體
+python3 tools/generate_font_cn.py
+
+# 3. 編譯
+make
+
+# 4. 提取 ROM 資源並生成中文資源包
+cd assets && python3 restool.py --extract-from-rom --languages cn
+cd ..
+
+# 5. 執行
+./zelda3
+
+# 6. 如需打包至 Batocera/EmuELEC 只需 3 個檔
+1:zelda3
+2:zelda3_assets.dat
+3:zelda3.ini
+```
+
+
+
 # Zelda3
 A reimplementation of Zelda 3.
 
