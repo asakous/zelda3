@@ -1,7 +1,10 @@
-#繁體中文化改的部份
+# 繁體中文化改的部份
 assets/dialogue_cn.txt 機器轉成繁體中文並補上缺少的字
+
 assets/text_compression.py 補上缺少的字並轉成繁體中文
+
 tools/generate_font_cn.py 補上缺少的字並轉成繁體中文
+
 tables/ark-pixel-12px-zh_cn.otf 改成繁體新版
 
 ## 編譯的方式
