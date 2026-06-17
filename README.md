@@ -40,6 +40,9 @@ cd ..
 3:zelda3.ini
 ```
 
+<img width="820" height="651" alt="image" src="https://github.com/user-attachments/assets/b1b31940-b571-40e6-a926-19e53cc23038" />
+<img width="984" height="850" alt="image" src="https://github.com/user-attachments/assets/5fca86d2-7ea6-4878-b02b-9ddf51af71d8" />
+
 
 
 # Zelda3
